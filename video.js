@@ -64,7 +64,6 @@ document.querySelector("#slider").addEventListener("change", function() {
 document.querySelector("#vintage").addEventListener("click", function() {
     console.log("I am in old school")
     vd = document.querySelector("video")
-    vd.classList.toggle("vintage")
 	vd.classList.add("oldSchool")
 
 });
@@ -72,7 +71,6 @@ document.querySelector("#vintage").addEventListener("click", function() {
 document.querySelector("#orig").addEventListener("click", function() {
     console.log("I am in original")
     vd = document.querySelector("video")
-    vd.classList.toggle("orig")
 	vd.classList.remove("oldSchool")
 
 });
