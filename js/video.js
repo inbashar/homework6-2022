@@ -52,12 +52,13 @@ document.querySelector("#mute").addEventListener("click", function() {
 });
 
 document.querySelector("#slider").addEventListener("change", function() {
-    console.log("Volume is changing")
     console.log(this)
     console.log(this.volume)
     // volume1 = document.querySelector("#slider")
 	//volume1.volume = this.value/100;
-	document.querySelector("#volume").innerHTML = video.volumechange*100 + "%"
+	video.volume = (this.value/100)
+	document.querySelector("#volume").innerHTML = video.volume*100 + "%"
+	console.log("Volume is changing to " + video.volume)
 });
 
 
