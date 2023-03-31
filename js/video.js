@@ -61,6 +61,19 @@ document.querySelector("#slider").addEventListener("change", function() {
 	console.log("Volume is changing to " + video.volume)
 });
 
+document.querySelector("#vintage").addEventListener("click", function() {
+    console.log("I am in old school")
+    vd = document.querySelector("video")
+	vd.classList.add("oldSchool")
+
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+    console.log("I am in original")
+    vd = document.querySelector("video")
+	vd.classList.remove("oldSchool")
+
+});
 
 
 
