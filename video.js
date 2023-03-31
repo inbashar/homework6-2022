@@ -22,17 +22,17 @@ document.querySelector("#pause").addEventListener("click", function() {
 });
 
 document.querySelector("#slower").addEventListener("click", function() {
-	video.playbackRate *= .95
+	video.playbackRate *= .90
  	console.log("Speed is" + video.playbackRate);
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
-	video.playbackRate /= .95
+	video.playbackRate /= .90
  	console.log("Speed is" + video.playbackRate);
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-	video.currentTime += 15
+	video.currentTime += 10
  	console.log("Current time is" + video.currentTime);
 	if (video.currentTime >= video.duration)
 		video.currentTime = 0
@@ -61,6 +61,21 @@ document.querySelector("#slider").addEventListener("change", function() {
 	console.log("Volume is changing to " + video.volume)
 });
 
+document.querySelector("#vintage").addEventListener("click", function() {
+    console.log("I am in old school")
+    vd = document.querySelector("video")
+    vd.classList.toggle("vintage")
+	vd.classList.add("oldSchool")
+
+});
+
+document.querySelector("#orig").addEventListener("click", function() {
+    console.log("I am in original")
+    vd = document.querySelector("video")
+    vd.classList.toggle("orig")
+	vd.classList.remove("oldSchool")
+
+});
 
 
 
